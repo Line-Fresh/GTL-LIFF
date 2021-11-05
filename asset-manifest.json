@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/GTL-LIFF/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/GTL-LIFF/static/js/main.566358a2.chunk.js",
-    "main.js.map": "/GTL-LIFF/static/js/main.566358a2.chunk.js.map",
+    "main.js": "/GTL-LIFF/static/js/main.dc41486e.chunk.js",
+    "main.js.map": "/GTL-LIFF/static/js/main.dc41486e.chunk.js.map",
     "runtime-main.js": "/GTL-LIFF/static/js/runtime-main.27adfff2.js",
     "runtime-main.js.map": "/GTL-LIFF/static/js/runtime-main.27adfff2.js.map",
     "static/js/2.cbc98e12.chunk.js": "/GTL-LIFF/static/js/2.cbc98e12.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.27adfff2.js",
     "static/js/2.cbc98e12.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.566358a2.chunk.js"
+    "static/js/main.dc41486e.chunk.js"
   ]
 }
