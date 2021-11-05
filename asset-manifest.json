@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/GTL-LIFF/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/GTL-LIFF/static/js/main.900b4fc8.chunk.js",
-    "main.js.map": "/GTL-LIFF/static/js/main.900b4fc8.chunk.js.map",
+    "main.js": "/GTL-LIFF/static/js/main.4ad67cbe.chunk.js",
+    "main.js.map": "/GTL-LIFF/static/js/main.4ad67cbe.chunk.js.map",
     "runtime-main.js": "/GTL-LIFF/static/js/runtime-main.27adfff2.js",
     "runtime-main.js.map": "/GTL-LIFF/static/js/runtime-main.27adfff2.js.map",
-    "static/js/2.ec797665.chunk.js": "/GTL-LIFF/static/js/2.ec797665.chunk.js",
-    "static/js/2.ec797665.chunk.js.map": "/GTL-LIFF/static/js/2.ec797665.chunk.js.map",
+    "static/js/2.917e4055.chunk.js": "/GTL-LIFF/static/js/2.917e4055.chunk.js",
+    "static/js/2.917e4055.chunk.js.map": "/GTL-LIFF/static/js/2.917e4055.chunk.js.map",
     "index.html": "/GTL-LIFF/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/GTL-LIFF/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.ec797665.chunk.js.LICENSE.txt": "/GTL-LIFF/static/js/2.ec797665.chunk.js.LICENSE.txt"
+    "static/js/2.917e4055.chunk.js.LICENSE.txt": "/GTL-LIFF/static/js/2.917e4055.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.27adfff2.js",
-    "static/js/2.ec797665.chunk.js",
+    "static/js/2.917e4055.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.900b4fc8.chunk.js"
+    "static/js/main.4ad67cbe.chunk.js"
   ]
 }
