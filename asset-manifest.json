@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/gtl-liff/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/gtl-liff/static/js/main.34b2eb5e.chunk.js",
-    "main.js.map": "/gtl-liff/static/js/main.34b2eb5e.chunk.js.map",
-    "runtime-main.js": "/gtl-liff/static/js/runtime-main.cecfd3a4.js",
-    "runtime-main.js.map": "/gtl-liff/static/js/runtime-main.cecfd3a4.js.map",
-    "static/js/2.e633dd07.chunk.js": "/gtl-liff/static/js/2.e633dd07.chunk.js",
-    "static/js/2.e633dd07.chunk.js.map": "/gtl-liff/static/js/2.e633dd07.chunk.js.map",
-    "index.html": "/gtl-liff/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/gtl-liff/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.e633dd07.chunk.js.LICENSE.txt": "/gtl-liff/static/js/2.e633dd07.chunk.js.LICENSE.txt"
+    "main.css": "/GTL-LIFF/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/GTL-LIFF/static/js/main.35b81c34.chunk.js",
+    "main.js.map": "/GTL-LIFF/static/js/main.35b81c34.chunk.js.map",
+    "runtime-main.js": "/GTL-LIFF/static/js/runtime-main.27adfff2.js",
+    "runtime-main.js.map": "/GTL-LIFF/static/js/runtime-main.27adfff2.js.map",
+    "static/js/2.374dc28a.chunk.js": "/GTL-LIFF/static/js/2.374dc28a.chunk.js",
+    "static/js/2.374dc28a.chunk.js.map": "/GTL-LIFF/static/js/2.374dc28a.chunk.js.map",
+    "index.html": "/GTL-LIFF/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/GTL-LIFF/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.374dc28a.chunk.js.LICENSE.txt": "/GTL-LIFF/static/js/2.374dc28a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.cecfd3a4.js",
-    "static/js/2.e633dd07.chunk.js",
+    "static/js/runtime-main.27adfff2.js",
+    "static/js/2.374dc28a.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.34b2eb5e.chunk.js"
+    "static/js/main.35b81c34.chunk.js"
   ]
 }
