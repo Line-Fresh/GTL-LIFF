@@ -1,25 +1,32 @@
-import React, { Component } from 'react';
-import { HashRouter as Router, Route, Link } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { useLiff } from 'react-liff';
+import { HashRouter, Route } from "react-router-dom";
+import Game from './pages/Game';
+import Social from './pages/Social';
 
+const App = () => {
+  const [profile, setProfile] = useState('');
+  const { error, liff, isLoggedIn, ready } = useLiff();
 
-const Home = () => <div><h2>Home</h2></div>
-const About = () => <div><h2>About</h2></div>
+  useEffect(() => {
+    if (!isLoggedIn) return;
 
-class App extends Component {
-  render() {
-    return (
-      <Router basename="/">
+    (async () => {
+      const profile = await liff.getProfile();
+      setProfile(profile);
+    })();
+  }, [liff, isLoggedIn]);
+
+  return (
+    <HashRouter basename="/">
+      {(error || !isLoggedIn || !ready)? <p>Loading...</p>:
         <div>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-          </ul>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
+          <Route exact path="/game" component={()=><Game profile={profile} />} />
+          <Route exact path="/social" component={() => <Social profile={profile} />} />
         </div>
-      </Router>
-    );
-  }
+      }
+    </HashRouter>
+  )
 }
 
 export default App;
