@@ -4,8 +4,10 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import Game from './pages/Game';
 import Social from './pages/Social';
 
+const Home = () => <div><h2>Home</h2></div>
+
 const App = () => {
-  const [profile, setProfile] = useState('');
+  const [profile, setProfile] = useState({});
   const { error, liff, isLoggedIn, ready } = useLiff();
 
   useEffect(() => {
@@ -19,12 +21,13 @@ const App = () => {
 
   return (
     <HashRouter basename="/">
-      {(error || !isLoggedIn || !ready)? <p>Loading...</p>:
+      
         <Routes>
+          <Route exact path="/" component={Home} />
           <Route exact path="/game" component={()=><Game profile={profile} />} />
           <Route exact path="/social" component={() => <Social profile={profile} />} />
         </Routes>
-      }
+      
     </HashRouter>
   )
 }
