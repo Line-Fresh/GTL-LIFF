@@ -5,7 +5,8 @@ const Game = (props) => {
 
   return(
     <div>
-      Game {profile}
+      Game
+      {profile.displayName}
     </div>
   )
 }

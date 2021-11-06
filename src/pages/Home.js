@@ -1,13 +1,14 @@
 import React, {useState, useEffect} from 'react';
 
-const Social = (props) =>{
+const Home = (props) =>{
   const {profile} = props;
 
   return(
     <div>
-      Social
+        Home
+        {profile.displayName}
     </div>
   )
 }
 
-export default Social;
+export default Home;
