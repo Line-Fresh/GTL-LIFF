@@ -1,27 +1,32 @@
 import React, { useEffect, useState } from 'react';
-import {init, getProfile} from './utils/liffHelper';
 import './App.css';
+
+const liff = window.liff;
+const liffId = process.env.REACT_APP_LINE_LIFF_ID;
 
 const App = () => {
   const [profile, setProfile] = useState("")
-  init()
+
+  const initializeApp = () =>{
+    profile = JSON.stringify(liff.getProfile());
+  }
 
   useEffect(() => {
-    (async () => {
-      const data = await getProfile()
-      setProfile(data)
-    })();
+    liff
+        .init({
+            liffId
+        })
+        .then(() => {
+            initializeApp();
+        })
+        .catch((err) => {
+            alert('fail to open');
+        });
   }, []);
-
-  // useEffect(() => {
-  //   (async () => {
-  //     liffHelper.init();
-  //   })();
-  // }, []]);
 
   return (
     <div>
-      home{profile}
+      home {profile}
     </div>
   );
 }
