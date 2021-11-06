@@ -19,12 +19,10 @@ const App = () => {
     })();
   }, [liff, isLoggedIn]);
 
-  if(!isLoggedIn){
-    return(
-      <div>
-        <button className="App-button" onClick={liff.login}>Login</button>
-      </div>
-    )
+  if (!ready) return <p>Loading...</p>
+
+  if (!isLoggedIn) {
+    return <button className="App-button" onClick={liff.login}>Login</button>
   }
 
   return (
