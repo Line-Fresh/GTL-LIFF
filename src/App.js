@@ -7,7 +7,10 @@ const App = () => {
   init()
 
   useEffect(() => {
-    getProfile()
+    (async () => {
+      const data = await getProfile()
+      setProfile(data)
+    })();
   }, []);
 
   // useEffect(() => {
