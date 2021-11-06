@@ -4,28 +4,33 @@ let isInit = false;
 let profile = {};
 let liffInfo = {};
 
-class liffHelper {
-  init() {
-    liff
-    .init({
-      liffId
-    })
-    .then(() => {
-      liff.login()
-      isInit = true
-    })
-    .catch((err) => {
-        alert('fail to login')
-    });
-  }
+const init = () => {
+  liff
+  .init({
+    liffId
+  })
+  .then(() => {
+    initializeApp();
+  })
+  .catch((err) => {
+      alert('fail to login')
+  });
+}
 
-  getProfile() {
-    if(!profile) profile = liff.getProfile() 
-    return profile
-  }
+const initializeApp = async() => {
+  profile = await liff.getProfile() 
+  console.log(profile)
+}
+
+const getProfile = () => { 
+  return profile
+}
 
 //   sendMessages(messages) {
 
 //   }
+
+module.exports = {
+  init, 
+  getProfile
 };
-export default new liffHelper();
