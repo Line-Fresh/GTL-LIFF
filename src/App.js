@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { useLiff } from 'react-liff';
-
 import './App.css';
 
 const App = () => {
-  const [displayName, setDisplayName] = useState('');
+  const [profile, setProfile] = useState('');
   const { error, liff, isLoggedIn, ready } = useLiff();
 
   useEffect(() => {
     if (!isLoggedIn) return;
 
     (async () => {
-      const profile = await liff.getProfile();
-      setDisplayName(profile.displayName);
+      const profile = await liff.getProfile()
+      setProfile(JSON.stringify(profile))
     })();
   }, [liff, isLoggedIn]);
 
@@ -25,7 +24,7 @@ const App = () => {
     }
     return (
       <>
-        <p>Welcome to the react-liff demo app, {displayName}!</p>
+        <p>Welcome to the react-liff demo app, {profile}!</p>
         <button className="App-button" onClick={liff.logout}>Logout</button>
       </>
     );
