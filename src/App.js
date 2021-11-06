@@ -8,7 +8,7 @@ const App = () => {
   useEffect(() => {
     (async () => {
       liffHelper.init();
-      const profile = JSON.strongify(liffHelper.getProfile());
+      setProfile(JSON.stringify(liffHelper.getProfile()));
     })();
   }, []);
 
