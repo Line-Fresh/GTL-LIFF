@@ -10,7 +10,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
     boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
     '&::after': {
       position: 'absolute',
-      top: 0,
+      top: -1,
       left: -1,
       width: '100%',
       height: '100%',
