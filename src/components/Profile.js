@@ -11,7 +11,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
     '&::after': {
       position: 'absolute',
       top: 0,
-      left: 0,
+      left: -1,
       width: '100%',
       height: '100%',
       borderRadius: '50%',
@@ -34,7 +34,6 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
 const Profile = (props) => {
   const {profile} = props;
-  console.log(profile)
 
   return (
     <div style={{paddingTop: '15px'}}>
@@ -50,9 +49,9 @@ const Profile = (props) => {
           />
         </StyledBadge>
       </div>
-      <div style={{ marginLeft: '100px', marginTop: '-15px'}}>
+      <div style={{ marginLeft: '75px', marginTop: '-15px'}}>
         <p style={{fontSize: '20px', fontWeight: 'bold'}}>虎尾闖關GO</p>
-        <p style={{marginTop: '-10px'}}>{profile.displayName}</p>
+        <p style={{marginTop: '-15px'}}>{profile.displayName}</p>
       </div>
     </div>
   );
