@@ -7,9 +7,6 @@ const liffId = process.env.REACT_APP_LINE_LIFF_ID;
 const App = () => {
   const [profile, setProfile] = useState("")
 
-  const initializeApp = () =>{
-    profile = JSON.stringify(liff.getProfile());
-  }
 
   useEffect(() => {
     liff
@@ -17,7 +14,7 @@ const App = () => {
             liffId
         })
         .then(() => {
-            initializeApp();
+          setProfile(JSON.stringify(liff.getProfile()))
         })
         .catch((err) => {
             alert('fail to open');
