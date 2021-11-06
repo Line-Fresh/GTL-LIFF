@@ -6,7 +6,7 @@ const Game = (props) => {
   return(
     <div>
       Game
-      {profile.displayName}
+      {JSON.stringify(profile)}
     </div>
   )
 }
