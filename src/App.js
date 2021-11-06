@@ -15,7 +15,7 @@ const App = () => {
 
     (async () => {
       const profile = await liff.getProfile();
-      setProfile(JSON.stringify(profile));
+      setProfile(profile);
     })();
   }, [liff, isLoggedIn]);
 

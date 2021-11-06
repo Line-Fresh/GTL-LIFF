@@ -5,8 +5,8 @@ const Home = (props) =>{
 
   return(
     <div>
-        Home
-        {profile.displayName}
+      Home
+      {profile.displayName}
     </div>
   )
 }
