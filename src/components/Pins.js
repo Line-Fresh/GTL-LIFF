@@ -42,7 +42,7 @@ function Pins(props) {
         <Marker key={info.id} longitude={info.longitude} latitude={info.latitude}>
         <img 
           onClick={() => handleOpen(info.id)}
-          src={pinimg} height="30" width="30"
+          src={pinimg} height="40" width="40"
           style={{
           cursor: 'pointer',
           fill: '#d00',
